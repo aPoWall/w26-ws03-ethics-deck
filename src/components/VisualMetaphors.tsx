@@ -89,7 +89,7 @@ export const VisualMetaphor: React.FC<VisualMetaphorProps> = ({
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="w-80 h-80 relative"
+          className="w-64 h-64 relative"
         >
           {/* Stop sign */}
           <svg viewBox="0 0 200 200" className="w-full h-full">
@@ -99,7 +99,7 @@ export const VisualMetaphor: React.FC<VisualMetaphorProps> = ({
               stroke="#171717"
               strokeWidth="3"
               initial={{ scale: 0.9 }}
-              animate={{ scale: [0.9, 1.05, 0.9] }}
+              animate={{ scale: [0.9, 1.02, 0.9] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
             <text
@@ -107,16 +107,13 @@ export const VisualMetaphor: React.FC<VisualMetaphorProps> = ({
               y="110"
               textAnchor="middle"
               fill="white"
-              fontSize="32"
+              fontSize="28"
               fontWeight="bold"
               fontFamily="IBM Plex Mono, monospace"
             >
               STOP
             </text>
           </svg>
-          <div className="text-center mt-4 font-bold text-swiss-red">
-            THINK FIRST
-          </div>
         </motion.div>
       );
 
