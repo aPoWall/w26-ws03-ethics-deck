@@ -46,14 +46,14 @@ export const VisualMetaphor: React.FC<VisualMetaphorProps> = ({
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="w-80 h-80 relative"
+          className="w-32 h-32 relative"
         >
           {/* Rocket going up */}
           <motion.svg
             viewBox="0 0 200 200"
             className="w-full h-full"
-            initial={{ y: 20 }}
-            animate={{ y: [20, 0, 20] }}
+            initial={{ y: 10 }}
+            animate={{ y: [10, 0, 10] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
             {/* Rocket body */}
@@ -78,9 +78,6 @@ export const VisualMetaphor: React.FC<VisualMetaphorProps> = ({
               transition={{ duration: 0.3, repeat: Infinity }}
             />
           </motion.svg>
-          <div className="text-center mt-4 font-bold text-swiss-red">
-            ACCELERATE
-          </div>
         </motion.div>
       );
 
